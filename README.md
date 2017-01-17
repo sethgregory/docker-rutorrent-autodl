@@ -12,7 +12,7 @@ docker create --name=rutorrent-autodl \
 -v <path to downloads>:/downloads \
 -e PGID=<gid> -e PUID=<uid> -e TZ=<timezone> \
 -p 80:80 -p 9527:9527/udp -p 45566-45576:45566-45576 \
-sethgregory/rutorrent-autodl
+sethgregory/docker-rutorrent-autodl
 ```
 
 **Parameters**
@@ -22,9 +22,9 @@ sethgregory/rutorrent-autodl
 * `-p 9527/udp` - the port(s)
 * `-v /config` - where rutorrent should store it's config files
 * `-v /downloads` - path to your downloads folder
-* `-e PGID` for GroupID - see below for explanation
-* `-e PUID` for UserID - see below for explanation
-* `-e TZ` for timezone information, eg Europe/London
+* `-e PGID` - for GroupID - see below for explanation
+* `-e PUID` - for UserID - see below for explanation
+* `-e TZ` - for timezone information, eg Europe/London
 
 ### User / Group Identifiers
 
